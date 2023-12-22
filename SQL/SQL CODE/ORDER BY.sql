@@ -1,0 +1,13 @@
+CREATE TABLE lib(bname char(75),bno int(76),bprice int(65),aname char(34));
+CREATE TABLE rea(bno int(67),rid int(56),rname char(78),ramt int(78));
+INSERT INTO lib(bname,bno,bprice,aname) VALUES ('hardyboys',5,675,'sherwin');
+INSERT INTO lib(bname,bno,bprice,aname) VALUES ('ramayan',4,1000,'valmiki');
+INSERT INTO lib(bname,bno,bprice,aname) VALUES ('mahabartham',2,875,'vyasa');
+INSERT INTO lib(bname,bno,bprice,aname) VALUES ('life',1,65,'Kara');
+INSERT INTO lib(bname,bno,bprice,aname) VALUES ('road',3,605,'lawrence');
+INSERT INTO rea(bno,rid,rname,ramt) VALUES (5,65,'rita',56);
+INSERT INTO rea(bno,rid,rname,ramt) VALUES (3,55,'lita',500);
+INSERT INTO rea(bno,rid,rname,ramt) VALUES (2,51,'sita',200);
+INSERT INTO rea(bno,rid,rname,ramt) VALUES (1,56,'darwin',1000);
+INSERT INTO rea(bno,rid,rname,ramt) VALUES (4,54,'lata',600);
+SELECT lib.bname,rea.rname ,lib.bprice,rea.ramt FROM lib,rea WHERE lib.bprice>rea.ramt ORDER BY lib.bprice ASC;
