@@ -1,0 +1,11 @@
+import my_module
+result_sub = my_module.sub(10, 7)
+result_mul = my_module.mul(4, 6)
+result_div = my_module.div(8, 2)
+result_sqrt = my_module.sqrt(9, 0.5)
+result_add = my_module.add(3, 5)
+print("Result of addition:", result_add)
+print("Result of subtraction:", result_sub)
+print("Result of multiplication:", result_mul)
+print("Result of division:", result_div)
+print("Result of square root:", result_sqrt)
